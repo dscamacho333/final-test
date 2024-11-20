@@ -5,7 +5,7 @@ import java.util.*;
 public class Problem01 {
     public static void main(String[] args) {
 
-        Mochila mochila = new Mochila(10);
+        Mochila mochila = new Mochila(40);
         System.out.println("-------Elementos-------");
         mochila.getItems().forEach(System.out::println);
         System.out.println("-------Capacidad maxima mochila-------");

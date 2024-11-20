@@ -3,7 +3,7 @@ package co.edu.unbosque.algorithm02;
 public class Problem01 {
     public static void main(String[] args) {
 
-        int[] array = {1, 2, 3, 4, 5};
+        int[] array = {1, 2, 3, 4, 5, 9};
         int total = numeroElementos(array, 0, array.length-1);
         System.out.println(total);
     }

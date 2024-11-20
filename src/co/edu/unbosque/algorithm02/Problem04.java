@@ -3,7 +3,7 @@ package co.edu.unbosque.algorithm02;
 public class Problem04 {
     public static void main(String[] args) {
         int[] numeros = {1,2,3,4,5,6};
-        int elementoEncontrado = buscarElemento(6, numeros, 0, numeros.length - 1) ;
+        int elementoEncontrado = buscarElemento(9, numeros, 0, numeros.length - 1) ;
         System.out.println(elementoEncontrado);
     }
 
