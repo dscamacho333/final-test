@@ -9,23 +9,20 @@ public class Problem04 {
 
     private static int buscarElemento(int elemento, int[] numeros, int left, int right){
 
-        int indice = -1;
+        if(left > right){
+            return -1;
+        }
+
         int mitad = left + (right - left) / 2;
 
-        if(elemento == numeros[left]){
-
-            indice = left;
+        if(elemento == numeros[mitad]){
+            return mitad;
         }
         else if(elemento < numeros[mitad]){
 
             return buscarElemento(elemento, numeros, left, mitad);
 
-        }else if (elemento > numeros[mitad]){
-
-            return buscarElemento(elemento, numeros, mitad + 1, right);
-
         }
-
-        return indice;
+            return buscarElemento(elemento, numeros, mitad + 1, right);
     }
 }
